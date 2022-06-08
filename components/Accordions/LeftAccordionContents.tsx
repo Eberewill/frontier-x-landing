@@ -93,7 +93,7 @@ const LeftAccordionContents = () => {
                 />
               </svg>
 
-              <p className="title-font pl-3  font-medium">@Lorem ipsum</p>
+              <p className="title-font pl-3 xs:pl-0  font-medium">@Lorem ipsum</p>
             </div>
           </div>
         </div>
