@@ -4,7 +4,7 @@ import BorderGradient from "../components/BorderGradient";
 import Navbar from "../components/NavBar";
 import NftCarousel from "../components/NftCarousel";
 import Tabs from "../components/Tabs";
-import Accordion from "../components/Accordions/Accordion";
+import AccordionsSection from "../components/Accordions/AccordionsSection";
 import Contents from "../components/Contents";
 
 
@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <NftCarousel />
         <Contents />
         <Tabs />
-        <Accordion/>
+        <AccordionsSection/>
       </BgLayout>
     </>
   );
