@@ -20,6 +20,7 @@ export default function Index() {
         <CarouselProvider
           className="lg:block hidden"
           naturalSlideWidth={100}
+          naturalSlideHeight={5}
           isIntrinsicHeight={true}
           totalSlides={NftImages.length}
           visibleSlides={4}
@@ -63,6 +64,7 @@ export default function Index() {
 
         {/* Carousel for tablet and medium size devices */}
         <CarouselProvider
+         naturalSlideHeight={5}
           className="lg:hidden md:block hidden"
           naturalSlideWidth={100}
           isIntrinsicHeight={true}
@@ -150,6 +152,7 @@ export default function Index() {
 
         {/* Carousel for mobile and Small size Devices */}
         <CarouselProvider
+         naturalSlideHeight={5}
           className="block md:hidden "
           naturalSlideWidth={100}
           isIntrinsicHeight={true}

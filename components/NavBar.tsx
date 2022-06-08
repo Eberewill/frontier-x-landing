@@ -21,11 +21,11 @@ const Navbar = () => {
                   <Image
                     className="hidden lg:block h-8 w-auto"
                     src={Logog}
-                    alt="Workflow"
+                    alt="home"
                   />
                 </div>
               </div>
-              <div className="max-w-lg   w-full lg:max-w-xl sm:max-w-sm">
+              <div className="max-w-lg ml-10   w-full lg:max-w-xl sm:max-w-sm">
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <SearchIcon
@@ -50,7 +50,7 @@ const Navbar = () => {
                     href="#"
                     className="text-gray-300 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Lorem ipsum
+                    Lorem ipsum 
                   </a>
                   <a
                     href="#"

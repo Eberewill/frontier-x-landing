@@ -24,7 +24,7 @@ const AccordionComponent = ({
     <div className="flex flex-col justify-center items-center rounded-xl h-auto pb-20">
       <div
         onClick={handleActiveState}
-        className="flex group cursor-pointer w-full mx-auto h-16 justify-between  items-center p-2 mt-2 rounded-md bg-bgdrk "
+        className={`flex group cursor-pointer w-full mx-auto h-16 justify-between  items-center p-2 mt-2 ${activeState ? 'rounded-t-lg' : 'rounded-md'} bg-bgdrk`}
       >
         <div className="flex group cursor-pointer">
             <div className="pl-6">
@@ -49,7 +49,7 @@ const AccordionComponent = ({
       </div>
 
       {activeState && (
-        <div className="bg-bgdrk pl-4   rounded-buttom font-semibold text-white w-full h-auto  pb-5  mb-2 ">
+        <div className="bg-bgdrk pl-4 rounded-b-lg font-semibold text-white w-full h-auto  pb-5  mb-2 ">
           {children}
         </div>
       )}
