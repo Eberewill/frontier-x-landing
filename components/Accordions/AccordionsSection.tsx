@@ -3,9 +3,11 @@ import AccordionComponent from "./AccordionComponent";
 import LeftAccordionContents from "./LeftAccordionContents";
 import RightAccordionContent from "./RightAccordionContent";
 
-const Accordion = () => {
+const AccordionsSection = () => {
   return (
-    <div className="lg:mx-20 sm:mx-5 xs:mt-5  xs:mx-5 ">
+    
+    <div className="container mx-auto lg:pt-8">
+    <div className="lg:mx-20  sm:mx-5 xs:mt-5  xs:mx-5 ">
       <div className="grid grid-cols-1  gap-6 xs:gap-2 sm:grid-cols-2">
         <div>
           <AccordionComponent title={"Lorem ipsum"}>
@@ -15,7 +17,7 @@ const Accordion = () => {
         <div>
           <AccordionComponent
             title={
-              <div className="grid grid-cols-3 gap-4 content-start">
+              <div className="grid grid-cols-2 gap-4 content-start">
                 Lorem ipsum{" "}
                 <svg
                   width="13"
@@ -37,13 +39,14 @@ const Accordion = () => {
 
           </AccordionComponent>
           <AccordionComponent title={"Lorem ipsum"}>
-            <h2 className="p-4">The World we are in is Beautifuly made</h2>
+            <h2 className="p-4">The World is Beautiful...</h2>
           </AccordionComponent>
 
         </div>
       </div>{" "}
     </div>
+    </div>
   );
 };
 
-export default Accordion;
+export default AccordionsSection;

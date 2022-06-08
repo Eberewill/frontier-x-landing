@@ -39,11 +39,11 @@ const AccordionComponent = ({
             {title}
           </div>
         </div>
-        <div className="flex items-center justify-center pr-5">
+        <div className="flex items-center justify-center pr-3">
           {activeState ? (
-            <ChevronUpIcon className="w-6 h-6  text-white white" />
+            <ChevronDownIcon  className="w-6 h-6  text-white white" />
           ) : (
-            <ChevronDownIcon className="w-6 h-6 text-white white" />
+            <ChevronUpIcon className="w-6 h-6 text-white white" />
           )}
         </div>
       </div>

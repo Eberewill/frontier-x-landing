@@ -11,17 +11,20 @@
              background-image: url("/asset/line.png");
         background-repeat: no-repeat;
         background-position: center;
+        width: 6px;
+        height: 3px;
+        
     }
 
     .scrollbar::-webkit-scrollbar-thumb {
         background: #1C1C1C;
         border: 1px solid #565656;
-        border-radius: 100px;
+        border-radius: 6px;
         
     }
 
     .scrollbar::-webkit-scrollbar-track {
        
-
+        height: 3px;
     }
 }

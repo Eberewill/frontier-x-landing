@@ -25,7 +25,7 @@ const Contents = () => {
         <span className="block text-white">
           Created by : <span className="text-red-400">Lorem ipsum</span>{" "}
         </span>
-        <span className="block text-white mt-3">
+        <span className="block text-white  mt-3">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
         </span>
       </p>
