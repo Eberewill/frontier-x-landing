@@ -6,6 +6,10 @@
     animation: AnimationName 3s ease infinite;
   }
 
+  .simplebar-track.simplebar-vertical {
+    background-color: orange;
+}
+
   @keyframes AnimationName {
     0%,
     100% {

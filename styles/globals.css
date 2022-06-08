@@ -4,3 +4,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
+@layer utilities {
+
+    /* Scroll thumb styles */
+    .scrollbar::-webkit-scrollbar {
+             background-image: url("/asset/line.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb {
+        background: #1C1C1C;
+        border: 1px solid #565656;
+        border-radius: 100px;
+        
+    }
+
+    .scrollbar::-webkit-scrollbar-track {
+       
+
+    }
+}

@@ -2,8 +2,8 @@ import React from "react";
 const LeftAccordionContents = () => {
   return (
     <>
-      <div className="p-4">
-        <p className="text-white text-xs">
+      <div className="p-4 mr-6">
+        <p className="text-white text-sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

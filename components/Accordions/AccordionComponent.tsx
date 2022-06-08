@@ -8,7 +8,7 @@ const AccordionComponent = ({
   title,
   children,
 }: {
-  title: string;
+  title: string | React.ReactNode;
   children: React.ReactNode;
   
 }) => {
