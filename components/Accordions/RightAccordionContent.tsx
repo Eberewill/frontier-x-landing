@@ -11,17 +11,17 @@ const RightAccordionContent = () => {
             maxHeight: 300,
           }}
         >
-          <div className="grid grid-cols-3 gap-4 pr-5">
+          <div className="grid grid-cols-3 gap-4 pr-7">
             {tabItems.map((item: any, index) => (
               <div
                 key={index}
-                className="text-center inline-block bg-button-colour rounded p-4 text-gray-900 mb-4 hover:border border-redCustom"
+                className="text-center  border-transparent inline-block bg-button-colour rounded p-4 text-gray-900 mb-4 hover:border border-redCustom"
               >
-                <p className="text-sm text-gray-500">{item.item}</p>
-                <h3 className="text-md leading-normal mb-2 font-extrabold text-white">
+                <p className="text-xs text-gray-500">{item.item}</p>
+                <h3 className="text-base lg:my-2 leading-normal  font-extrabold text-white">
                   {item.heading}
                 </h3>
-                <p className="text-sm text-gray-500">{item.percentage}%.</p>
+                <p className="text-xs text-gray-500">{item.percentage}%.</p>
               </div>
             ))}
           </div>
