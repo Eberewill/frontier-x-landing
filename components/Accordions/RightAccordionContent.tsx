@@ -12,7 +12,7 @@ const RightAccordionContent = () => {
             {tabItems.map((item: any, index) => (
               <div
                 key={index}
-                className="text-center inline-block bg-button-colour rounded p-3 text-gray-900  hover:border border-redCustom"
+                className="text-center inline-block bg-button-colour rounded p-3 text-gray-900 cursor-pointer    hover:outline outline-offset-2 outline-redCustom"
               >
                 <p className="text-sm text-gray-500">{item.item}</p>
                 <h3 className="text-md leading-normal mb-2 lg:font-bold sm:font-bold text-white">

@@ -21,11 +21,11 @@ const Contents = () => {
         </span>
       </h1>
 
-      <p className="text-center mt-4 text-base">
+      <p className="text-center mt-2 text-base">
         <span className="block text-white">
-          Created by : <span className="text-red-400">Lorem ipsum</span>{" "}
+          Created by : <span className=" text-red-400">Lorem ipsum</span>{" "}
         </span>
-        <span className="block text-white  mt-3">
+        <span className="block text-white  mt-2">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
         </span>
       </p>
