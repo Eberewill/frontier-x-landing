@@ -5,7 +5,7 @@ import RightAccordionContent from "./RightAccordionContent";
 
 const Accordion = () => {
   return (
-    <div className="mx-20 xs:mx-2">
+    <div className="mx-20 xs:mx-2 ">
       <div className="grid grid-cols-1  gap-6 sm:grid-cols-2">
         <div>
           <RightAccordion title={"Lorem ipsum"}>
