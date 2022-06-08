@@ -5,8 +5,8 @@ import RightAccordionContent from "./RightAccordionContent";
 
 const Accordion = () => {
   return (
-    <div className="mx-20 xs:mx-2 ">
-      <div className="grid grid-cols-1  gap-6 sm:grid-cols-2">
+    <div className="lg:mx-20 sm:mx-5 xs:mt-5  xs:mx-5 ">
+      <div className="grid grid-cols-1  gap-6 xs:gap-2 sm:grid-cols-2">
         <div>
           <RightAccordion title={"Lorem ipsum"}>
             <LeftAccordionContents />
@@ -17,7 +17,7 @@ const Accordion = () => {
             <RightAccordionContent />
           </RightAccordion>
           <RightAccordion title={"Hello Workld"}>
-            <h2 className="p-4">The World we are in is Beautifuly made</h2>
+            <h2 className="p-4">The World  is Beautifuly...</h2>
           </RightAccordion>
         </div>
       </div>{" "}
