@@ -5,6 +5,7 @@ import { tabItems } from "../../data";
 const RightAccordionContent = () => {
   return (
     <>
+
       <div className="p-4 ">
         <div className="scrollbar h-[300px] overflow-y-scroll">
           <div className="grid grid-cols-3 gap-4 mr-6">
@@ -15,9 +16,10 @@ const RightAccordionContent = () => {
               >
                 <p className="text-sm text-gray-500">{item.item}</p>
                 <h3 className="text-md leading-normal mb-2 lg:font-bold sm:font-bold text-white">
+
                   {item.heading}
                 </h3>
-                <p className="text-sm text-gray-500">{item.percentage}%.</p>
+                <p className="text-xs text-gray-500">{item.percentage}%.</p>
               </div>
             ))}
           </div>
