@@ -5,7 +5,7 @@ const Contents = () => {
   return (
     <>
       <div className="flex justify-center items-center -mt-6">
-        <div className="-mt-20 sm:-mt-20">
+        <div className="-mt-20 sm:-mt-20 ">
           <Image
             width="149px"
             height="149px"
