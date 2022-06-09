@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head'
 
-const Meta = ({ title, keywords, icon, description }: { title : string, keywords? : string, icon: string, description?: string }) => {
+const Meta = ({ title, keywords, icon, description }: { title : string, keywords? : string, icon?: string, description?: string }) => {
     return (
 
         <Head>

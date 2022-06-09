@@ -11,7 +11,7 @@ import Meta from "../components/Meta";
 const Home: NextPage = () => {
   return (
     <>
-    <Meta title="Home" keywords="fr0ntier-x,nft" icon="/asset/logo" description="sample page"/>
+    <Meta title="Home" keywords="fr0ntier-x,nft" description="sample page"/>
       <Navbar />
       <BorderGradient />
       <BgLayout>
