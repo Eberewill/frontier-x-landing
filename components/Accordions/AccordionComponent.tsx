@@ -3,7 +3,7 @@ import Script from "next/script";
 import { ArrowUpIcon, LockClosedIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
-
+import { motion, AnimatePresence } from 'framer-motion';
 const AccordionComponent = ({
   title,
   children,
@@ -16,6 +16,33 @@ const AccordionComponent = ({
   const [activeState, setActiveState] = useState(false)
   const handleActiveState = () => {
       setActiveState(!activeState)
+  }
+
+  const buttonVariants = {
+    hover: {
+      scale: 1.5,
+      transition: {
+        duration: 0.3,
+        yoyo: Infinity
+      }
+    }
+  }
+  
+  const nextVariants = {
+    hidden: { 
+      y: '-100vw' ,
+      opacity: 0,
+      
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { type: 'spring', stiffness: 120 , mass: 0.4, damping: 8}
+    },
+    exit: {
+      y: "-100vh",
+      transition: { ease: 'easeInOut' }
+    }
   }
 
   return (
@@ -35,25 +62,33 @@ const AccordionComponent = ({
                  src="/asset/button2.svg"
                 />
             </div>
-          <div className="text-white font-semibold pl-2 group-hover:text-white">
+          <div  className="text-white font-semibold pl-2 group-hover:text-white">
             {title}
           </div>
         </div>
-        <div className="flex items-center justify-center pr-3">
+        <motion.div
+        variants={buttonVariants}
+        whileHover="hover"
+        className="flex items-center justify-center pr-3">
           {activeState ? (
             <ChevronDownIcon  className="w-6 h-6  text-white white" />
           ) : (
             <ChevronUpIcon className="w-6 h-6 text-white white" />
           )}
-        </div>
+        </motion.div>
       </div>
-
+<AnimatePresence>
       {activeState && (
-        <div className="bg-bgdrk pl-4 rounded-b-lg font-semibold text-white w-full h-auto  pb-5  mb-2 ">
+        <motion.div
+        exit="exit"
+        variants={nextVariants}
+        initial="hidden"
+        animate="visible"
+         className="bg-bgdrk pl-4 rounded-b-lg font-semibold text-white w-full h-auto  pb-5  mb-2 ">
           {children}
-        </div>
+        </motion.div>
       )}
-    
+    </AnimatePresence>
     </div>
     </>
   );
