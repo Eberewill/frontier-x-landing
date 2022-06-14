@@ -1,5 +1,15 @@
 import React from "react";
+import {motion} from 'framer-motion'
 const LeftAccordionContents = () => {
+  const buttonVariants = {
+    hover: {
+      scale: 1.1,
+      transition: {
+        duration: 0.1,
+        
+      }
+    }
+  }
   return (
     <>
       <div className="p-4 mr-6">
@@ -13,8 +23,11 @@ const LeftAccordionContents = () => {
         </p>
 
         <div className="pt-6">
-          <div className=" inline-block mr-2">
-            <div className="flex  pr-2 h-full items-center">
+          <div className=" cursor-pointer inline-block mr-2">
+            <motion.div
+             variants={buttonVariants}
+             whileHover="hover"
+              className="flex  pr-2 h-full items-center">
               <svg
                 width="23"
                 height="23"
@@ -31,11 +44,14 @@ const LeftAccordionContents = () => {
               <p className="title-font text-redCustom pl-3 font-medium">
                 Lorem ipsum.com
               </p>
-            </div>
+            </motion.div>
           </div>
 
           <div className=" inline-block mr-2">
-            <div className="flex  pr-2 h-full items-center">
+            <motion.div
+             variants={buttonVariants}
+             whileHover="hover"
+            className="flex cursor-pointer pr-2 h-full items-center">
               <svg
                 width="24"
                 height="18"
@@ -52,13 +68,16 @@ const LeftAccordionContents = () => {
               <p className="title-font pl-3 text-redCustom font-medium">
                 @Lorem ipsum
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
 
         <div className="pt-6">
           <div className=" inline-block mr-2">
-            <div className="flex  pr-2 h-full items-center">
+            <motion.div
+             variants={buttonVariants}
+             whileHover="hover"
+            className="flex curso-pointer  pr-2 h-full items-center">
               <svg
                 width="20"
                 height="20"
@@ -75,11 +94,14 @@ const LeftAccordionContents = () => {
               <p className="title-font text-redCustom pl-3 font-medium">
                 @Lorem ipsum
               </p>
-            </div>
+            </motion.div>
           </div>
 
           <div className="pl-6 inline-block mr-2">
-            <div className="flex  pr-2 h-full items-center">
+            <motion.div
+             variants={buttonVariants}
+             whileHover="hover"
+            className="flex curso-pointer  pr-2 h-full items-center">
               <svg
                 width="20"
                 height="17"
@@ -94,7 +116,7 @@ const LeftAccordionContents = () => {
               </svg>
 
               <p className="title-font pl-3 xs:pl-0  font-medium">@Lorem ipsum</p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

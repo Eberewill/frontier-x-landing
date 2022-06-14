@@ -8,12 +8,30 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { NftImages } from "../data";
+import {motion} from 'framer-motion'
 
 /* Install pure-react-carousel using -> npm i pure-react-carousel */
 
 export default function Index() {
   return (
-    <div className="container mx-auto lg:pt-8">
+    <motion.div
+    initial='hidden' animate='visible' variants={{
+      hidden: {
+        scale: .8,
+        opacity: 0
+      },
+      visible:{
+        scale: 1,
+        opacity: 1,
+        transition: {
+          delay: .4
+        }
+      }
+    }
+      
+    }
+    
+    className="container mx-auto lg:pt-8">
       <div className="flex items-center  rounded-md justify-center w-full h-full py-24 sm:py-8 px-4">
         {/* Carousel for desktop and large size devices */}
 
@@ -236,6 +254,6 @@ export default function Index() {
           </div>
         </CarouselProvider>
       </div>
-    </div>
+    </motion.div>
   );
 }

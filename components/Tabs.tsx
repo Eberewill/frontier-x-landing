@@ -1,10 +1,36 @@
 
 import Image from "next/image";
 import React from "react";
+import {motion} from 'framer-motion'
 
 const Tabs = () => {
+
+  const buttonVariants = {
+    hover: {
+      scale: 1.5,
+      transition: {
+        duration: 0.3,
+        
+      }
+    }
+  }
   return (
-      <div className=" lg:mx-20 lg:py-20 xs:my-5 sm:py-5  xs:mx-2 flex justify-center items-center">
+      <motion.div
+      initial='hidden' animate='visible' variants={{
+        hidden: {
+          scale: .8,
+          opacity: 0
+        },
+        visible:{
+          scale: 1,
+          opacity: 1,
+          transition: {
+            delay: .4
+          },
+          
+        },
+      }}
+      className=" lg:mx-20 lg:py-20 xs:my-5 sm:py-5  xs:mx-2 flex justify-center items-center">
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
       <div>
         <button
@@ -57,7 +83,7 @@ const Tabs = () => {
         </button>
       </div>
     </div>
-    </div>
+    </motion.div>
   );
 };
 
